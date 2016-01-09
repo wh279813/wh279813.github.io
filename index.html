@@ -201,21 +201,21 @@
 <ul>
 <li>写一个新的日志：</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"A NEW BLOG"</span></span><br></pre></td></tr></table></figure>
-<ul>
+<pre><code>$ hexo new &quot;A NEW BLOG&quot;
+</code></pre><ul>
 <li>生成静态网站，自动生成并反馈改动：</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<ul>
+<pre><code>$ hexo generate 
+</code></pre><ul>
 <li>部署到github page：</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<h3 id="Visual_Studio_Code"><a href="#Visual_Studio_Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h3><p>对于web前段设计者和.net程序员来说，尤其像对于vim接触比较少，Visual Studio Code也是一个很好用的文档编辑器。</p>
+<pre><code>$ hexo deploy
+</code></pre><h3 id="Visual_Studio_Code"><a href="#Visual_Studio_Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h3><p>对于web前段设计者和.net程序员来说，尤其像对于vim接触比较少，Visual Studio Code也是一个很好用的文档编辑器。</p>
 <p>Mac Terminal中打开vs code，需要在配置bash_profile中加入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code () &#123; VSCODE_CWD=&#34;$PWD&#34; open -n -b &#34;com.microsoft.VSCode&#34; --args $*; &#125;</span><br></pre></td></tr></table></figure>
-<p>修改bash_profile用editer nano即可：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nano ~/.bash_profile</span><br></pre></td></tr></table></figure>
-<p>修改之后，命令code可用来打开或者新建，用法和vim一样：</p>
+<pre><code>code () { VSCODE_CWD=&quot;$PWD&quot; open -n -b &quot;com.microsoft.VSCode&quot; --args $*; }
+</code></pre><p>修改bash_profile用editer nano即可：</p>
+<pre><code>$ nano ~/.bash_profile
+</code></pre><p>修改之后，命令code可用来打开或者新建，用法和vim一样：</p>
 <ul>
 <li><code>code</code> – 打开 Visual Studio Code </li>
 <li><code>code .</code> – 在 Visual Studio Code 打开当前文件</li>

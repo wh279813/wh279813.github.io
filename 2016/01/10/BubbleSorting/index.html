@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+  <meta name="keywords" content="算法," />
 
 
 
@@ -37,16 +37,19 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="This is my first approach for static blog, drived by Hexo and hosted on the github page.">
+<meta name="description" content="Bubble sortHere I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. 
+Sorting algorithm is the basic, and bubble">
 <meta property="og:type" content="article">
-<meta property="og:title" content="First Approach">
-<meta property="og:url" content="http://yoursite.com/2016/01/01/First-Approach/index.html">
+<meta property="og:title" content="BubbleSorting">
+<meta property="og:url" content="http://yoursite.com/2016/01/10/BubbleSorting/index.html">
 <meta property="og:site_name" content="Harry's blog">
-<meta property="og:description" content="This is my first approach for static blog, drived by Hexo and hosted on the github page.">
-<meta property="og:updated_time" content="2016-01-07T15:55:18.000Z">
+<meta property="og:description" content="Bubble sortHere I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. 
+Sorting algorithm is the basic, and bubble">
+<meta property="og:updated_time" content="2016-01-10T13:57:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="First Approach">
-<meta name="twitter:description" content="This is my first approach for static blog, drived by Hexo and hosted on the github page.">
+<meta name="twitter:title" content="BubbleSorting">
+<meta name="twitter:description" content="Bubble sortHere I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. 
+Sorting algorithm is the basic, and bubble">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -56,7 +59,7 @@
   };
 </script>
 
-  <title> First Approach | Harry's blog </title>
+  <title> BubbleSorting | Harry's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -162,7 +165,7 @@
           
           
             
-              First Approach
+              BubbleSorting
             
           
         </h1>
@@ -171,8 +174,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-01-01T16:34:36+01:00" content="2016-01-01">
-            2016-01-01
+          <time itemprop="dateCreated" datetime="2016-01-10T14:40:46+01:00" content="2016-01-10">
+            2016-01-10
           </time>
         </span>
 
@@ -190,23 +193,31 @@
       
 
       
-        <span itemprop="articleBody"><p>This is my first approach for static blog, drived by <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> and hosted on the <a href="https://pages.github.com" target="_blank" rel="external">github page</a>.</p>
+        <span itemprop="articleBody"><h3 id="Bubble_sort"><a href="#Bubble_sort" class="headerlink" title="Bubble sort"></a>Bubble sort</h3><p>Here I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. </p>
+<p>Sorting algorithm is the basic, and bubble sort has the top priority.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[]= &#123;<span class="number">12</span>, <span class="number">12</span>, <span class="number">123</span>, <span class="number">51</span>, <span class="number">42</span>, <span class="number">15</span>, <span class="number">54</span>, <span class="number">63</span>, <span class="number">56</span>, <span class="number">62</span>, <span class="number">71</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> length = (<span class="keyword">int</span>) <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(*arr); <span class="comment">// get the length of array</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length - <span class="number">1</span>; i++)</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; length - <span class="number">1</span> - i; j++)            </span><br><span class="line">       <span class="keyword">if</span> (arr[j] &gt; arr[j+ <span class="number">1</span>])</span><br><span class="line">           swap(arr[j],arr[j+<span class="number">1</span>]);</span><br><span class="line">     </span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; length; i++)</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; arr[i] &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
 </span>
       
     </div>
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag">#算法</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/08/Blog配置文件/" rel="prev">Blog配置文件</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/08/Blog配置文件/" rel="next">Blog配置文件</a>
             
           </div>
         </div>
@@ -310,7 +321,7 @@
           <div class="post-toc">
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bubble_sort"><span class="nav-number">1.</span> <span class="nav-text">Bubble sort</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

@@ -37,19 +37,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="Sorting AlgorigmsHere I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. 
-Bubble sortBubble sort has the top pr">
+<meta name="description" content="Sorting AlgorigmsFinally I get time to relax and note something. Now I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sorting Algorithms">
 <meta property="og:url" content="http://yoursite.com/2016/01/10/Sort-Algorithms/index.html">
 <meta property="og:site_name" content="Harry's blog">
-<meta property="og:description" content="Sorting AlgorigmsHere I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. 
-Bubble sortBubble sort has the top pr">
-<meta property="og:updated_time" content="2016-01-11T20:09:43.000Z">
+<meta property="og:description" content="Sorting AlgorigmsFinally I get time to relax and note something. Now I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown">
+<meta property="og:updated_time" content="2016-01-11T20:37:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sorting Algorithms">
-<meta name="twitter:description" content="Sorting AlgorigmsHere I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. 
-Bubble sortBubble sort has the top pr">
+<meta name="twitter:description" content="Sorting AlgorigmsFinally I get time to relax and note something. Now I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -174,7 +171,7 @@ Bubble sortBubble sort has the top pr">
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-01-10T14:40:46+01:00" content="2016-01-10">
+          <time itemprop="dateCreated" datetime="2016-01-10T14:40:46+08:00" content="2016-01-10">
             2016-01-10
           </time>
         </span>
@@ -208,11 +205,11 @@ Bubble sortBubble sort has the top pr">
       
 
       
-        <span itemprop="articleBody"><h2 id="Sorting_Algorigms"><a href="#Sorting_Algorigms" class="headerlink" title="Sorting Algorigms"></a>Sorting Algorigms</h2><p>Here I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. </p>
-<h3 id="Bubble_sort"><a href="#Bubble_sort" class="headerlink" title="Bubble sort"></a>Bubble sort</h3><p>Bubble sort has the top priority in the sorting algorithms and it often occurs in the interview or examination. So we get start from bubble sort:</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[]= &#123;<span class="number">12</span>, <span class="number">12</span>, <span class="number">123</span>, <span class="number">51</span>, <span class="number">42</span>, <span class="number">15</span>, <span class="number">54</span>, <span class="number">63</span>, <span class="number">56</span>, <span class="number">62</span>, <span class="number">71</span> &#125;;</span><br><span class="line"><span class="keyword">int</span> length = (<span class="keyword">int</span>) <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(*arr); <span class="comment">// get the length of array</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length - <span class="number">1</span>; i++)</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; length - <span class="number">1</span> - i; j++)            </span><br><span class="line">       <span class="keyword">if</span> (arr[j] &gt; arr[j+ <span class="number">1</span>])</span><br><span class="line">           swap(arr[j],arr[j+<span class="number">1</span>]);</span><br><span class="line">     </span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; length; i++)</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; arr[i] &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+        <span itemprop="articleBody"><h2 id="Sorting_Algorigms"><a href="#Sorting_Algorigms" class="headerlink" title="Sorting Algorigms"></a>Sorting Algorigms</h2><p>Finally I get time to relax and note something. Now I will review several basic algorithms and take it as a chance for reviewing c++ programming. All demenstration codes will be shown in c++. </p>
+<h3 id="Bubble_sort"><a href="#Bubble_sort" class="headerlink" title="Bubble sort"></a>Bubble sort</h3><p>Bubble sort has the top priority in the sorting algorithms and it often occurs in the interview or examination(Perhaps the philosophy that is pretty simple).So we get start from bubble sort:</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> arr[]= &#123;<span class="number">5</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> length = (<span class="keyword">int</span>) <span class="keyword">sizeof</span>(arr)/<span class="keyword">sizeof</span>(*arr); <span class="comment">// get the length of array</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length - <span class="number">1</span>; i++)</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; length - <span class="number">1</span> - i; j++)            </span><br><span class="line">       <span class="keyword">if</span> (arr[j] &gt; arr[j+ <span class="number">1</span>])</span><br><span class="line">           swap(arr[j],arr[j+<span class="number">1</span>]);</span><br><span class="line">     </span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; length; i++)</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; arr[i] &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
 <p>The basic idea of bubble sorting is comparing every neighboring two elements, thus the largest or smallest one will be arranged to the last one after a round. Then repeat this process until all elements in order.</p>
-<h3 id="Quicksort"><a href="#Quicksort" class="headerlink" title="Quicksort"></a>Quicksort</h3><p>Quick sort is an efficient and simple sorting algorithm. </p>
+<h3 id="Quicksort"><a href="#Quicksort" class="headerlink" title="Quicksort"></a>Quicksort</h3><p>Quick sort is a fast and efficient sorting algorithm. </p>
 </span>
       
     </div>
@@ -231,6 +228,8 @@ Bubble sortBubble sort has the top pr">
       
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/09/Complexity/" rel="prev">Sorting Algorithms</a>
             
           </div>
 
@@ -298,7 +297,7 @@ Bubble sortBubble sort has the top pr">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -312,7 +311,7 @@ Bubble sortBubble sort has the top pr">
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

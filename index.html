@@ -370,33 +370,7 @@
         
           <span itemprop="articleBody"><h3 id="u94FE_u8868"><a href="#u94FE_u8868" class="headerlink" title="链表"></a>链表</h3><p>链表是最基础的数据结构之一，简单可以理解为自行车上的车链，一个纽扣下一个扣，一个Node连着下一个Node。<br>链表的节点：链表的节点(Node)起码包含两个元素，键值和下个一个节点(Node)。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> LinkedList_Node</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> m_key;</span><br><span class="line">    LinkedList_Node* pNextNode;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="u94FE_u8868_u7684_u751F_u6210"><a href="#u94FE_u8868_u7684_u751F_u6210" class="headerlink" title="链表的生成"></a>链表的生成</h3><p>由于链表是一环扣一环的，所以首节点即可表示整个链表。下面是如何生成一个链表（c++），以节点为10的链表为例。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">CreateLinkedList</span><span class="params">(Linkedlist_Node* pHeadNode)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    LinkedList_Node* p = pHeadnode;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;<span class="number">10</span>; i++) <span class="comment">//创建另外9个节点</span></span><br><span class="line">    &#123;</span><br><span class="line">        ListNode* pNewNode = <span class="keyword">new</span> LinkedList_Node;</span><br><span class="line">        pNewNode -&gt; m_key = i;</span><br><span class="line">        pNewNode -&gt; pNextNode ＝ <span class="literal">NULL</span>;</span><br><span class="line">        p -&gt; pNextNode = pNewNode;</span><br><span class="line">        p = pNewNode;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    LinkedList_Node* head = <span class="literal">NULL</span>;</span><br><span class="line">    head = <span class="keyword">new</span> LinkedList_Node;   <span class="comment">//c++中struct的初始化不用加（）,毕竟不是class</span></span><br><span class="line">    head -&gt; m_key =<span class="number">0</span>; <span class="comment">//初始化首节点</span></span><br><span class="line">    head -&gt; pNextNode = <span class="literal">NULL</span>; </span><br><span class="line">    CreateLinkedList(head);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>配置好了blog，作一个简单的记录，包括配置博客的过程和静态网站生成器的使用。借助于各种技术的支持，搭建一个网站变得非常的简单。</p>
-<h3 id="u670D_u52A1_u5668"><a href="#u670D_u52A1_u5668" class="headerlink" title="服务器"></a>服务器</h3><p><a href="https://pages.github.com" target="_blank" rel="external">github page</a>可以直接把github里的repository搭建为静态网站，并附带详细的搭建步骤。</p>
-<h3 id="u535A_u5BA2_u6846_u67B6"><a href="#u535A_u5BA2_u6846_u67B6" class="headerlink" title="博客框架"></a>博客框架</h3><p>如果不想手写html文件，可以使用一些静态网站生成器自动生成文件，常用的有<a href="https://jekyllrb.com" target="_blank" rel="external">jekyll</a>等，这里使用的是博客框架<a href="https://hexo.io" target="_blank" rel="external">hexo</a>。这是一个非常简答，易于使用的框架，基于<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>和<a href="https://git-scm.com" target="_blank" rel="external">git</a>。 </p>
-<p>hexo常用使用指令：</p>
-<ul>
-<li>写一个新的日志：</li>
-</ul>
-<pre><code>$ hexo new &quot;A NEW BLOG&quot;
-</code></pre><ul>
-<li>生成静态网站，自动生成并反馈改动：</li>
-</ul>
-<pre><code>$ hexo generate 
-</code></pre><ul>
-<li>部署到github page：</li>
-</ul>
-<pre><code>$ hexo deploy
-</code></pre><h3 id="Visual_Studio_Code"><a href="#Visual_Studio_Code" class="headerlink" title="Visual Studio Code"></a>Visual Studio Code</h3><p>对于web前段设计者和.net程序员来说，尤其像对于vim接触比较少，Visual Studio Code也是一个很好用的文档编辑器。</p>
-<p>Mac Terminal中打开vs code，需要在配置bash_profile中加入：</p>
-<pre><code>code () { VSCODE_CWD=&quot;$PWD&quot; open -n -b &quot;com.microsoft.VSCode&quot; --args $*; }
-</code></pre><p>修改bash_profile用editer nano即可：</p>
-<pre><code>$ nano ~/.bash_profile
-</code></pre><p>修改之后，命令code可用来打开或者新建，用法和vim一样：</p>
-<ul>
-<li><code>code</code> – 打开 Visual Studio Code </li>
-<li><code>code .</code> – 在 Visual Studio Code 打开当前文件</li>
-<li><code>code somefile</code> – 在 Visual Studio Code 中打开某一文件</li>
-</ul>
+<h3 id="u94FE_u8868_u7684_u5220_u9664"><a href="#u94FE_u8868_u7684_u5220_u9664" class="headerlink" title="链表的删除"></a>链表的删除</h3><p>删除链表，遍历一下这个链表，使用delete删除即可。c++中所有new初始化的实例，都使用delete来删除。 </p>
 </span>
         
       
